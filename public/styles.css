@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgba(0, 0, 0, 0.699); */
+  color: blue;
+  /* background-image: linear-gradient(90deg,#01105260 0%, #007e3f 35%, #3ec001 120%);  */
+  background-color: #04612f;
+  background-image: linear-gradient(90deg, #85ffbd 0%, #8a7dff 100%);
+  line-height: 1.6;
+}
+
+/* Styling for header section */
+header a {
+  text-decoration: none;
+}
+header {
+  /* background-color: rgba(0, 0, 0, 0.459); */
+  /* background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); */
+  background-color: #04612f;
+  background-image: linear-gradient(100deg, #77fcb5 0%, #8275fc 100%);
+
+  height: 80px;
+  padding: 20px;
+  margin: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  /* Pushes brand logo to left and Links to the right */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #fff 20%,
+    rgb(1, 32, 11) 40%,
+    rgb(1, 32, 11) 60%,
+    #fff 80%
+  );
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.logo a {
+  color: #04612f;
+}
+
+.desktopNavBar ul {
+  font-weight: bold;
+  list-style: none;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+
+.desktopNavBar ul a {
+  color: white;
+}
+.desktopNavBar ul li {
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+}
+.desktopNavBar ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(3, 53, 12) !important;
+  border-radius: 50px;
+}
+/* Desktop Buttons Login and Signup */
+.desktopNavButtons ul {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  margin: 5px;
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  justify-content: space-around;
+  gap: 10px;
+  color: #ffa500;
+}
+.desktopNavButtons #login {
+  color: white !important;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dashed rgb(0, 255, 149);
+}
+.desktopNavButtons #signup {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dashed rgb(0, 255, 149);
+}
+.desktopNavButtons #addToCart {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dashed rgb(0, 255, 149);
+}
+.desktopNavButtons ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(3, 53, 12);
+  border-radius: 50px;
+}
+#login a {
+  color: wheat;
+}
+#signup a {
+  color: white;
+}
+#addToCart a {
+  color: white;
+}
+#logOut{
+  border-radius: 0px;
+  padding: 0px;
+  margin:0px ;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+}
+
+#mobileNav {
+  margin: auto;
+  /* Hidden because we only want it showing on mobile */
+  display: none;
+  /* pointer shows its clickable */
+  cursor: pointer;
+}
+/* Simple Styling for landing/Home Page */
+#bigText{
+  background-image:url('../images/firstPageBackground.jpg');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 23px;
+}
+#bigText h1{
+  font-size: 50px;
+  line-height: 1.2;
+ }
+ #bigText p{
+   font-size: 20px;
+ }
+ #bigText .button{
+   font-size: 20px;
+   text-decoration: none;
+   color: brown;
+   border: brown 2px solid;
+   padding: 12px 22px;
+   border-radius: 11px;
+   margin-top:20px;
+ }
+ #bigText .button:hover{
+   background-color: red;
+   color: aliceblue;
+ }
+ /* Styling for Menu page which will contain all products */
+ section{
+   padding: 3.5em;
+ }
+ section .card{
+   background-color: white;
+   border-radius: 12px;
+   box-shadow:0px 10px 5px #636e72 ;
+   padding: 1em;
+   text-align: center;
+   
+ }
+ .card .title{
+   font-size: 18px;
+   font-weight: bold;
+   
+ }
+.card #image img{
+   max-width: 100%;
+   border-radius: 4px;
+ }
+ .card .text{
+   text-align: left;
+   margin-left: 2em;
+   font-size: 13px;
+   margin-bottom: 0.5em;
+   
+ }
+ .card .cart-button{
+   border: none;
+   /* padding: 1em; */
+   border-radius: 5px;
+  color: green !important;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dashed rgb(0, 255, 149);
+  font-weight: bold;
+  width: 80%;
+ }
+ .card .cart-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(3, 53, 12);
+  border-radius: 50px;
+  }
+ 
+ /* Styling each section differently as grids to allow for headers above them/ For Desktop Screens*/
+.categoryOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+  .pizza{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+  .Noodles{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+   .starters{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+  .categoryHeader{
+    background-color: green;
+   border-radius: 12px;
+   box-shadow:0px 10px 5px #636e72 ;
+   padding: 0.5em;
+   text-align: center;
+   color: white;
+   width: 100%;
+   align-items: center;
+   align-content: center;
+  }
+  /* MenuPage Grid Responsive for Tablet screens */
+  @media(max-width: 1144px){
+    .categoryOne{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+  .pizza{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+  .Noodles{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+   .starters{
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+  }
+}
+  /* MenuPage Grid Responsive for Phone screens */
+  @media(max-width: 786px){
+    .categoryOne{
+   display: grid;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    
+  }
+  .pizza{
+     display: grid;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .Noodles{
+     display: grid;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+   .starters{
+     display: grid;
+    grid-column-gap:20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  }
