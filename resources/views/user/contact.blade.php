@@ -11,23 +11,26 @@
 <header>
     @include('user.navbar')
 </header>
-<body>
+
+<body class = "contactPage">
+    <div class = "wrapperContact">
     <h1 class ="contactHeader">Contact Us!</h1>
     
     
     <div id="contactBox">
     <form class ="labels" action="">
-        
-        <div><label for="name">name</label>
-        <input type="text"></div>
-        <div> <label for="email">Email</label>
-        <input type="text"></div>
-        <div><label for="number">Number</label>
-        <input type ="number"></div>
-        <div><label for="Message">Message</label>
-        <input type="text"></div>
+        <h3>Contact Form!</h3>
+        <div class ="areas"><label class= "targetLabels"   for="name">name</label>
+        <input class= "targetInputs" type="text"></div>
+        <div class ="areas"> <label class= "targetLabels" for="email">Email</label>
+        <input class= "targetInputs" type="text"></div>
+        <div class ="areas"><label class= "targetLabels" for="number">Number</label>
+        <input class= "targetInputs" type ="number"></div>
+        <div class ="areas"><label class= "targetLabels" for="Message">Message</label>
+        <input class= "targetInputs" type="text"></div>
 
     </form>
+    </div>
     </div>
 </body>
 </html>

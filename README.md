@@ -81,3 +81,9 @@ https://www.youtube.com/watch?v=MFh0Fd7BsjE - Laravel Crash course
 https://www.youtube.com/watch?v=ImtZ5yENzgE Laravel Course
 
 DMU FRONT END WEB DEVELOPMENT MODULE - Implemented mobile menu which I learnt from a previous module.
+
+https://www.youtube.com/watch?v=f0DcnrpeBv8 - Contact
+https://www.youtube.com/watch?v=opbtRRSHGnk - contact
+https://www.youtube.com/watch?v=p_QjYcQV1Bc - contact
+https://www.youtube.com/watch?v=9hnJsNIBq1g
+https://www.veerotech.net/kb/how-to-drop-a-table-in-phpmyadmin/#:~:text=Login%20to%20cPanel%20and%20open,Drop%20to%20delete%20the%20table. - phpMyadmin
