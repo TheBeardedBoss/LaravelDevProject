@@ -52,3 +52,6 @@ Route::get('/viewMenuProducts',[AdminController::class,'viewMenuProducts']);
 Route::get('/deleteMenuProducts/{id}',[AdminController::class,'deleteMenuProducts']);
 Route::get('/editMenuProducts/{id}',[AdminController::class,'editMenuProducts']);
 Route::post('/changeMenuProducts/{id}',[AdminController::class,'changeMenuProducts']);
+
+//addToCart route
+Route::post('/addToCart/{id}',[UserController::class,'addToCart']);

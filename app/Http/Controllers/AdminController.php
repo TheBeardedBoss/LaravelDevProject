@@ -31,7 +31,7 @@ class AdminController extends Controller
         $value->price=$request->price;
 
         $value->save();
-
+        //Return redirect back will direct user to same page
         return redirect()->back()->with('message', 'Added Successfully');
 
     }

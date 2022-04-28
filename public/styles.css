@@ -317,3 +317,10 @@ header {
     grid-template-columns: 1fr;
   }
   }
+  /* Styling for Contact-Us Page */
+  .contactHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

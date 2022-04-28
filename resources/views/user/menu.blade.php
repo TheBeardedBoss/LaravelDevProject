@@ -32,9 +32,13 @@
         <div class="text">{{$menuProducts -> description}}</div>
         <div class="price">£{{$menuProducts -> price}}</div>
         
+        <form action="{{url('addToCart',$menuProducts -> id)}}" method="POST">
+             @csrf
         <button class="cart-button">
+           
             Add to cart
         </button>
+        </form>
        
         </div>
         @endforeach

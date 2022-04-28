@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\menuProducts;
+use App\Models\Basket;
+
 
 class UserController extends Controller
 {
@@ -51,5 +53,16 @@ class UserController extends Controller
         }    
     public function contact(){
             return view('user.contact');
-        }            
+        }    
+    public function addToCart(Request $request,$id){
+        // user variable will contain user data and create a new basket session stored within basket variable
+        $user=auth()->user();
+        $Basket=new Basket;
+        
+        // logged in user will have name shifted into basket database name column, same will be done for all data variables
+        $Basket->name=$user->name;
+        return redirect()->back();
+
+    }    
+        
 }
