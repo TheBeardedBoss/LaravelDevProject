@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\menuProducts;
 use App\Models\Basket;
+use App\Models\contactMessages;
 
 
 class UserController extends Controller
@@ -63,6 +64,23 @@ class UserController extends Controller
         $Basket->name=$user->name;
         return redirect()->back();
 
-    }    
+    } 
+    public function addContactMessages(Request $request){
+        $value=new contactMessages;
+       
+        $value->name=$request->name;
+
+        $value->email=$request->email;
+
+        $value->number=$request->number;
+
+        $value->message=$request->message;
+
+
+        $value->save();
+        //Return redirect back will direct user to same page
+        return redirect()->back()->with('message', 'Message Sent Successfully!');
+
+    }   
         
 }

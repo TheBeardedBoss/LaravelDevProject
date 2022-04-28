@@ -331,7 +331,7 @@ header {
     border-radius: 20px;
     padding: 55px 30px;
     background-color: #795f0b;
-    /* margin: 50px auto; */
+    margin: 50px auto;
     opacity: 0.7;
   }
   /* .areas{
@@ -367,4 +367,23 @@ header {
   
   .contactPage{
     background-image: url(images/contactPageBackground.jpg);
+  }
+  /* Button styling same as menu page to keep consistency */
+  .SendMessage{
+   border: none;
+   /* padding: 1em; */
+   border-radius: 5px;
+  color: #795f0b !important;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dashed rgb(0, 255, 149);
+  font-weight: bold;
+  font-size: 18px;
+  width: 80%;
+ }
+ .SendMessage:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(3, 53, 12);
+  border-radius: 50px;
   }

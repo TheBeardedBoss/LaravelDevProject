@@ -41,6 +41,7 @@ Route::get('/menuProducts',[AdminController::class,'menuProducts']);
 Route::get('/about',[UserController::class,'about']);
 
 Route::get('/contact',[UserController::class,'contact']);
+Route::post('/addContactMessages',[UserController::class,'addContactMessages']);
 
 // This route has been setup as post to enter data rather then get data. It is for the entry of products into the database through the menuProducts blade page. The code for this route is setup in the admin controller where it is linked to.
 Route::post('/addMenuProducts',[AdminController::class,'addMenuProducts']);
