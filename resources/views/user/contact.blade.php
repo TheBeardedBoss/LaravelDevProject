@@ -12,17 +12,20 @@
     @include('user.navbar')
 </header>
 <body>
-    <h1 class = "contactHeader">Contact Us!</h1>
+    <h1 class ="contactHeader">Contact Us!</h1>
+    
+    
     <div id="contactBox">
-    <form action="">
-        <label for="name">name</label>
-        <input type="text">
-        <label for="email">Email</label>
-        <input type="text">
-        <label for="number">Number</label>
-        <input type ="number">
-        <label for="Message">Message</label>
-        <input type="text">
+    <form class ="labels" action="">
+        
+        <div><label for="name">name</label>
+        <input type="text"></div>
+        <div> <label for="email">Email</label>
+        <input type="text"></div>
+        <div><label for="number">Number</label>
+        <input type ="number"></div>
+        <div><label for="Message">Message</label>
+        <input type="text"></div>
 
     </form>
     </div>
