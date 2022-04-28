@@ -1,5 +1,7 @@
+
+<div class = "WrapDesktopNavbar">
 <div class="logo"><a href="/">MyCompany</a></div>
-      <nav class="desktopNavBar">
+        <nav class="desktopNavBar">
         <ul>
           <li><a href="/">Home</a></li>
           <!-- <li><a href="#our-Foods">Our-Foods</a></li> -->
@@ -28,3 +30,32 @@
             @endif
         </ul>
       </div>
+      </div>
+
+      <nav class = "mobileMenu">
+        <a href="#" class = "mobileLogo">MyFoodStore</a>
+        <ul class = "mobileMenu-wrapper">
+          <li class = "navLinks">
+          <a href="" class = "mobileMenu-Links">Home</a>
+          <a href="" class = "mobileMenu-Links">Menu</a>
+          <a href="" class = "mobileMenu-Links">Contact-Us</a>
+          <a href="" class = "mobileMenu-Links">About</a>
+          <a href="" class = "mobileMenu-Links">Add To Basket</a>
+          <a href="" class = "mobileMenu-Links">Log-In</a>
+          <a href="" class = "mobileMenu-Links">Sign-Up</a>
+        
+        </li>
+          <div class = "hamburger" >
+            <span class = "bar"></span>
+             <span class = "bar"></span>
+              <span class = "bar"></span>
+               <span class = "bar"></span>
+                <span class = "bar"></span>
+                 <span class = "bar"></span>
+                  <span class = "bar"></span>
+          </div>
+
+        </ul>
+      </nav>
+
+     
