@@ -30,6 +30,8 @@ Route::middleware([
 
 // Setting routes to Home controller adn Admin controller and to different pages of the website with url setting. All the routes for the website are setup on this page and allow data from different locations to be connected back through url.
 
+// Some route have been setup as post to enter data rather then get data. It is for the entry of products into the database through the menuProducts blade page, similaryly for messages. The code for this route is setup in the admin controller where it is linked to or the User controller.
+
 Route::get('/redirect',[UserController::class,'redirect']);
 
 Route::get('/',[UserController::class,'index']);
@@ -40,10 +42,13 @@ Route::get('/menuProducts',[AdminController::class,'menuProducts']);
 
 Route::get('/about',[UserController::class,'about']);
 
+// Routes for the Contact page
 Route::get('/contact',[UserController::class,'contact']);
 Route::post('/addContactMessages',[UserController::class,'addContactMessages']);
+Route::get('/viewContactMessages',[AdminController::class,'viewContactMessages']);
+Route::get('/deleteContactMessages/{id}',[AdminController::class,'deleteContactMessages']);
 
-// This route has been setup as post to enter data rather then get data. It is for the entry of products into the database through the menuProducts blade page. The code for this route is setup in the admin controller where it is linked to.
+
 Route::post('/addMenuProducts',[AdminController::class,'addMenuProducts']);
 
 // Route setup for viewing products in admin dashboard sidebar

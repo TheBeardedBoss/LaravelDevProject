@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\menuProducts;
+use App\Models\contactMessages;
 
 class AdminController extends Controller
 {
@@ -88,6 +89,23 @@ class AdminController extends Controller
 
         
      }
+
+     
+     
+    //  functions for dashboard viewing of contactMessages and deletion of them, similar to products.
+     public function viewContactMessages(){
+
+        $value=contactMessages::all();
+        return view('admin.viewContactMessages',compact('value'));
+    }
+
+     public function deleteContactMessages($id){
+        $value=contactMessages::find($id);
+        $value -> delete();
+
+        return redirect() -> back()->with('message', 'Deleted Successfully');
+    }
+    
 
 
 

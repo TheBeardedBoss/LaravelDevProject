@@ -85,7 +85,7 @@
             </a>
           </li>
 
-            <!-- Option to view products in menu in dashboard -->
+            <!-- Option to view products in menu in dashboard. also allows deletion and editing. -->
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('viewMenuProducts')}}">
               <span class="menu-icon">
@@ -104,5 +104,16 @@
               <span class="menu-title">addMenuProducts</span>
             </a>
           </li>
+
+          <!-- Option to view submitted mesages from contact page. -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('viewContactMessages')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">viewContactMessages</span>
+            </a>
+          </li>
+          
         </ul>
       </nav>

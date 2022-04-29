@@ -87,3 +87,4 @@ https://www.youtube.com/watch?v=opbtRRSHGnk - contact
 https://www.youtube.com/watch?v=p_QjYcQV1Bc - contact
 https://www.youtube.com/watch?v=9hnJsNIBq1g
 https://www.veerotech.net/kb/how-to-drop-a-table-in-phpmyadmin/#:~:text=Login%20to%20cPanel%20and%20open,Drop%20to%20delete%20the%20table. - phpMyadmin
+https://developer.mozilla.org/en-US/docs/Web/CSS/opacity

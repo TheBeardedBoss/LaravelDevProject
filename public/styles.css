@@ -13,11 +13,9 @@ body {
 }
 
 /* Styling for header section */
-header a {
-  text-decoration: none;
-}
-header {
-  /* background-color: rgba(0, 0, 0, 0.459); */
+
+.WrapDesktopNavbar{
+   /* background-color: rgba(0, 0, 0, 0.459); */
   /* background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); */
   background-color: #04612f;
   background-image: linear-gradient(100deg, #795f0b 0%, #312602 100%);
@@ -33,6 +31,10 @@ header {
   top: 0;
   /* Pushes brand logo to left and Links to the right */
 }
+.WrapDesktopNavbar a{
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -135,13 +137,113 @@ header {
   padding: 0px;
   margin:0px ;
 }
-
-@media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
+/* .mobileMenu{
+  display: none;
+  
 }
 
+.mobileMenu-wrapper{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    
+} */
+
+
+/* Styling for navbar Mobile but display none yet */
+
+   .mobileMenu{
+  display: none;   
+  }
+  .hamburger{
+    display: none;
+  }
+  
+
+ 
+@media screen and (max-width: 850px) {
+
+  
+
+  .mobileMenu{
+  
+  display: flex;
+  min-height: 70px;
+  justify-content: space-between;
+  padding: 0 24px;
+  align-items: center;
+  z-index: 5;
+  }
+
+.WrapDesktopNavbar{
+  display: none;
+}
+
+.mobileMenuWrapper li{
+  list-style: none;
+}
+.mobileMenuWrapper li a{
+  color:black;
+  text-decoration: none;
+}
+/* .mobileMenu{
+  display: flex;
+} */
+.mobileLogo{
+  font-size: 1.5rem;
+  color: white;
+}
+.mobileMenuWrapper{
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  height: 50%;
+  gap: 0;
+  flex-direction: column;
+  background-color:#04612f;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.navLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.mobileMenuWrapper.active{
+  left:0;
+}
+.mobileMenu-Links{
+  margin: 15px 0;
+}
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/* Sticky position on header is what allowed mobile menu to stay while scrolling, z-index keeps it infront of other details */
+header{
+  height: 70px;
+    top: 0;
+  background-color:#795f0b;
+  position: sticky;
+  z-index: 90;
+}
+
+}
+/* Styling for mobile-responsive Navbar */
 #mobileNav {
   margin: auto;
   /* Hidden because we only want it showing on mobile */
@@ -149,6 +251,7 @@ header {
   /* pointer shows its clickable */
   cursor: pointer;
 }
+
 /* Simple Styling for landing/Home Page */
 #bigText{
   background-image:url('../images/firstPageBackground.jpg');
@@ -290,7 +393,7 @@ header {
   }
 }
   /* MenuPage Grid Responsive for Phone screens */
-  @media(max-width: 786px){
+  @media(max-width: 600px){
     .categoryOne{
    display: grid;
     grid-column-gap:20px;
@@ -387,3 +490,4 @@ header {
   background-color: rgb(3, 53, 12);
   border-radius: 50px;
   }
+

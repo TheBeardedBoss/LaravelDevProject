@@ -1,4 +1,4 @@
-
+ 
 <div class = "WrapDesktopNavbar">
 <div class="logo"><a href="/">MyCompany</a></div>
         <nav class="desktopNavBar">
@@ -34,28 +34,41 @@
 
       <nav class = "mobileMenu">
         <a href="#" class = "mobileLogo">MyFoodStore</a>
-        <ul class = "mobileMenu-wrapper">
+        <ul class = "mobileMenuWrapper">
           <li class = "navLinks">
           <a href="" class = "mobileMenu-Links">Home</a>
           <a href="" class = "mobileMenu-Links">Menu</a>
           <a href="" class = "mobileMenu-Links">Contact-Us</a>
           <a href="" class = "mobileMenu-Links">About</a>
           <a href="" class = "mobileMenu-Links">Add To Basket</a>
-          <a href="" class = "mobileMenu-Links">Log-In</a>
-          <a href="" class = "mobileMenu-Links">Sign-Up</a>
+          
+          
+          @if (Route::has('login'))
+
+           @auth
+            <a href="#" class ="mobileMenu-Links"><x-app-layout> </x-app-layout></a>
+
+           @else
+          <a href="{{ route('login') }}" class = "mobileMenu-Links">Log-In</a>
+
+
+          @if (Route::has('register'))
+          <a href="{{ route('register') }}" class = "mobileMenu-Links">Sign-Up</a>
+           @endif
+                    @endauth
+                
+            @endif
         
         </li>
-          <div class = "hamburger" >
+        </ul>
+        
+        <div class = "hamburger" >
             <span class = "bar"></span>
              <span class = "bar"></span>
               <span class = "bar"></span>
-               <span class = "bar"></span>
-                <span class = "bar"></span>
-                 <span class = "bar"></span>
-                  <span class = "bar"></span>
+               
           </div>
-
-        </ul>
+          
       </nav>
 
-     
+     <script src="sscripts.js"></script>
