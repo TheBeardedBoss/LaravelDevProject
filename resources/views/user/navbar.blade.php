@@ -14,10 +14,11 @@
         <ul>
           <!-- <li id="login"><a href="/">Login</a></li>
           <li id="signup"><a href="/">Sign-up</a></li> -->
-          <li id="addToCart"><a href="/">Add to Basket</a></li>
+          
           @if (Route::has('login'))
                 
                     @auth
+                    <li id="addToCart"><a href="/">Basket()</a></li>
                       <li id = "logOut"><x-app-layout> </x-app-layout></li>
                     @else
                         <li id = "login"><a href="{{ route('login') }}" >Log in</a></li>
@@ -40,12 +41,13 @@
           <a href="" class = "mobileMenu-Links">Menu</a>
           <a href="" class = "mobileMenu-Links">Contact-Us</a>
           <a href="" class = "mobileMenu-Links">About</a>
-          <a href="" class = "mobileMenu-Links">Add To Basket</a>
+          
           
           
           @if (Route::has('login'))
 
            @auth
+           <a href="" class = "mobileMenu-Links">Basket()</a>
             <a href="#" class ="mobileMenu-Links"><x-app-layout> </x-app-layout></a>
 
            @else

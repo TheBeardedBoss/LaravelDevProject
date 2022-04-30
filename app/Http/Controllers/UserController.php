@@ -57,12 +57,26 @@ class UserController extends Controller
         }    
     public function addToCart(Request $request,$id){
         // user variable will contain user data and create a new basket session stored within basket variable
+       
+       if(Auth::id()){
         $user=auth()->user();
         $Basket=new Basket;
+
+        $menuProducts=menuProducts::find($id);
         
         // logged in user will have name shifted into basket database name column, same will be done for all data variables
         $Basket->name=$user->name;
-        return redirect()->back();
+        $Basket->email=$user->email;
+        $Basket->number=$user->number;
+        $Basket->address=$user->address;
+        $Basket -> menuProduct=$menuProducts ->name;
+        $Basket -> price=$menuProducts ->price;
+        $Basket ->save();
+        return redirect()->back()->with('message', 'Added to basket'); 
+       }
+       else {
+           return redirect('login');
+       }
 
     } 
     public function addContactMessages(Request $request){

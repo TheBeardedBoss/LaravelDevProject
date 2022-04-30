@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+    
 
     <!-- <style type = "text/css">
      .d-flex justify-content-center{
@@ -15,6 +16,15 @@
     <title>Document</title>
 </head>
 <body>
+    @if(session()->has('message'))
+        <!-- Use of bootstrap class for alert message -->
+        <div class ="alert alert-success" style = "width:50%">
+        <button type = "button" class = "close" data-bs-dismiss="alert">x</button>
+        
+        {{session()->get('message')}}
+        </div>
+        @endif
+
     <header>
        @include('user.navbar')
     </header>
@@ -197,13 +207,6 @@ C/O https://placeholder.com/" alt=""></div>
         </div>
         </section> -->
         <!-- STARTERS FINISHED --> 
-    
-
-   
-
-        
-        
-    
 
 </body>
 </html>
