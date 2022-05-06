@@ -1,141 +1,136 @@
+/* This Styles page has undergone many many changes over the months */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
 }
 body {
-  /* background-color: rgba(0, 0, 0, 0.699); */
-  color: blue;
-  /* background-image: linear-gradient(90deg,#01105260 0%, #007e3f 35%, #3ec001 120%);  */
-  background-color: #04612f;
-  background-image: linear-gradient(90deg, #85ffbd 0%, #8a7dff 100%);
-  line-height: 1.6;
+ /* background-color: rgba(0, 0, 0, 0.699); */
+ color: blue;
+ /* background-image: linear-gradient(90deg,#01105260 0%, #007e3f 35%, #3ec001 120%);  */
+ background-color: #04612f;
+ background-image: linear-gradient(90deg, #85ffbd 0%, #8a7dff 100%);
+ line-height: 1.6;
 }
 
 /* Styling for header section */
 
-.WrapDesktopNavbar{
-   /* background-color: rgba(0, 0, 0, 0.459); */
-  /* background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); */
-  background-color: #04612f;
-  background-image: linear-gradient(100deg, #795f0b 0%, #312602 100%);
-  opacity: 0.9;
-  height: 80px;
-  padding: 20px;
-  /* margin: 0.1em; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
-  position: sticky;
-  top: 0;
-  /* Pushes brand logo to left and Links to the right */
+.WrapDesktopNavbar {
+ /* background-color: rgba(0, 0, 0, 0.459); */
+ /* background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); */
+ background-color: #04612f;
+ background-image: linear-gradient(100deg, #795f0b 0%, #312602 100%);
+ opacity: 0.9;
+ height: 80px;
+ padding: 20px;
+ /* margin: 0.1em; */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 99;
+ position: sticky;
+ top: 0;
+ /* Pushes brand logo to left and Links to the right */
 }
-.WrapDesktopNavbar a{
-  text-decoration: none;
+.WrapDesktopNavbar a {
+ text-decoration: none;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 40px;
-  background-size: 200% auto;
-  background-image: linear-gradient(
-    to right,
-    #fff 20%,
-    rgb(1, 32, 11) 40%,
-    rgb(1, 32, 11) 60%,
-    #fff 80%
-  );
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 2s linear infinite;
+ display: flex;
+ align-items: center;
+ font-size: 40px;
+ background-size: 200% auto;
+ background-image: linear-gradient(to right, #fff 20%, rgb(1, 32, 11) 40%, rgb(1, 32, 11) 60%, #fff 80%);
+ color: #fff;
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: animate 2s linear infinite;
 }
 
 @keyframes animate {
-  to {
-    background-position: 200% center;
-  }
+ to {
+  background-position: 200% center;
+ }
 }
 
 .logo a {
-  color: #04612f;
+ color: #04612f;
 }
 
 .desktopNavBar ul {
-  font-weight: bold;
-  list-style: none;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  display: flex;
+ font-weight: bold;
+ list-style: none;
+ align-items: center;
+ position: relative;
+ text-align: center;
+ display: flex;
 }
 
 .desktopNavBar ul a {
-  color: white;
+ color: white;
 }
 .desktopNavBar ul li {
-  margin: 5px;
-  padding: 10px;
-  align-items: center;
+ margin: 5px;
+ padding: 10px;
+ align-items: center;
 }
 .desktopNavBar ul li:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  background-color: rgb(3, 53, 12) !important;
-  border-radius: 50px;
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(3, 53, 12) !important;
+ border-radius: 50px;
 }
 /* Desktop Buttons Login and Signup */
 .desktopNavButtons ul {
-  display: flex;
-  border-radius: 5px;
-  padding: 10px;
-  align-items: center;
-  margin: 5px;
-  font-weight: bold;
-  list-style: none;
-  text-align: center;
-  justify-content: space-around;
-  gap: 10px;
-  color: #ffa500;
+ display: flex;
+ border-radius: 5px;
+ padding: 10px;
+ align-items: center;
+ margin: 5px;
+ font-weight: bold;
+ list-style: none;
+ text-align: center;
+ justify-content: space-around;
+ gap: 10px;
+ color: #ffa500;
 }
 .desktopNavButtons #login {
-  color: white !important;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px dashed rgb(0, 255, 149);
+ color: white !important;
+ border-radius: 5px;
+ padding: 10px;
+ border: 1px dashed rgb(0, 255, 149);
 }
 .desktopNavButtons #signup {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px dashed rgb(0, 255, 149);
+ border-radius: 5px;
+ padding: 10px;
+ border: 1px dashed rgb(0, 255, 149);
 }
 .desktopNavButtons #addToCart {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px dashed rgb(0, 255, 149);
+ border-radius: 5px;
+ padding: 10px;
+ border: 1px dashed rgb(0, 255, 149);
 }
 .desktopNavButtons ul li:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  background-color: rgb(3, 53, 12);
-  border-radius: 50px;
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(3, 53, 12);
+ border-radius: 50px;
 }
 #login a {
-  color: wheat;
+ color: wheat;
 }
 #signup a {
-  color: white;
+ color: white;
 }
 #addToCart a {
-  color: white;
+ color: white;
 }
-#logOut{
-  border-radius: 0px;
-  padding: 0px;
-  margin:0px ;
+#logOut {
+ border-radius: 0px;
+ padding: 0px;
+ margin: 0px;
 }
 /* .mobileMenu{
   display: none;
@@ -150,51 +145,44 @@ body {
     
 } */
 
-
 /* Styling for navbar Mobile but display none yet */
 
-   .mobileMenu{
-  display: none;   
-  }
-  .hamburger{
-    display: none;
-  }
-  
+.mobileMenu {
+ display: none;
+}
+.hamburger {
+ display: none;
+}
 
- 
 @media screen and (max-width: 850px) {
-
-  
-
-  .mobileMenu{
-  
+ .mobileMenu {
   display: flex;
   min-height: 70px;
   justify-content: space-between;
   padding: 0 24px;
   align-items: center;
   z-index: 5;
-  }
+ }
 
-.WrapDesktopNavbar{
+ .WrapDesktopNavbar {
   display: none;
-}
+ }
 
-.mobileMenuWrapper li{
+ .mobileMenuWrapper li {
   list-style: none;
-}
-.mobileMenuWrapper li a{
-  color:black;
+ }
+ .mobileMenuWrapper li a {
+  color: black;
   text-decoration: none;
-}
-/* .mobileMenu{
+ }
+ /* .mobileMenu{
   display: flex;
 } */
-.mobileLogo{
+ .mobileLogo {
   font-size: 1.5rem;
   color: white;
-}
-.mobileMenuWrapper{
+ }
+ .mobileMenuWrapper {
   display: flex;
   position: fixed;
   left: -100%;
@@ -202,292 +190,370 @@ body {
   height: 50%;
   gap: 0;
   flex-direction: column;
-  background-color:#04612f;
+  background-color: #04612f;
   width: 100%;
   text-align: center;
   transition: 0.3s;
-}
-.navLinks{
+ }
+ .navLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-}
-.mobileMenuWrapper.active{
-  left:0;
-}
-.mobileMenu-Links{
+ }
+ .mobileMenuWrapper.active {
+  left: 0;
+ }
+ .mobileMenu-Links {
   margin: 15px 0;
-}
-.hamburger{
+ }
+ .hamburger {
   display: block;
   cursor: pointer;
-}
-.bar{
+ }
+ .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition:all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
-}
-/* Sticky position on header is what allowed mobile menu to stay while scrolling, z-index keeps it infront of other details */
-header{
+ }
+ /* Sticky position on header is what allowed mobile menu to stay while scrolling, z-index keeps it infront of other details */
+ header {
   height: 70px;
-    top: 0;
-  background-color:#795f0b;
+  top: 0;
+  background-color: #795f0b;
   position: sticky;
   z-index: 90;
-}
-
+ }
 }
 /* Styling for mobile-responsive Navbar */
 #mobileNav {
-  margin: auto;
-  /* Hidden because we only want it showing on mobile */
-  display: none;
-  /* pointer shows its clickable */
-  cursor: pointer;
+ margin: auto;
+ /* Hidden because we only want it showing on mobile */
+ display: none;
+ /* pointer shows its clickable */
+ cursor: pointer;
 }
 
 /* Simple Styling for landing/Home Page */
-#bigText{
-  background-image:url('../images/firstPageBackground.jpg');
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 23px;
+.homePageStyle {
+ background-image: linear-gradient(rgba(51, 39, 0, 0.9), rgba(0, 0, 0, 0.1)), url("../images/firstPageBackground.jpg");
 }
-#bigText h1{
-  font-size: 50px;
-  line-height: 1.2;
- }
- #bigText p{
-   font-size: 20px;
- }
- #bigText .button{
-   font-size: 20px;
-   text-decoration: none;
-   color: brown;
-   border: brown 2px solid;
-   padding: 12px 22px;
-   border-radius: 11px;
-   margin-top:20px;
- }
- #bigText .button:hover{
-   background-color: red;
-   color: aliceblue;
- }
- /* Styling for Menu page which will contain all products */
- section{
-   padding: 3.5em;
- }
- section .card{
-   background-color: white;
-   border-radius: 12px;
-   box-shadow:0px 10px 5px #636e72 ;
-   padding: 1em;
-   text-align: center;
-   
- }
- .card .title{
-   font-size: 18px;
-   font-weight: bold;
-   
- }
-.card #image img{
-   max-width: 100%;
-   border-radius: 4px;
- }
- .card .text{
-   text-align: left;
-   margin-left: 2em;
-   font-size: 13px;
-   margin-bottom: 0.5em;
-   
- }
- .card .cart-button{
-   border: none;
-   /* padding: 1em; */
-   border-radius: 5px;
-  color: green !important;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px dashed rgb(0, 255, 149);
-  font-weight: bold;
-  width: 80%;
- }
- .card .cart-button:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  background-color: rgb(3, 53, 12);
-  border-radius: 50px;
-  }
- 
- /* Styling each section differently as grids to allow for headers above them/ For Desktop Screens*/
-.categoryOne{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-  .pizza{
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-  .Noodles{
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-   .starters{
-     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-  .categoryHeader{
-    background-color: green;
-   border-radius: 12px;
-   box-shadow:0px 10px 5px #636e72 ;
-   padding: 0.5em;
-   text-align: center;
-   color: white;
-   width: 100%;
-   align-items: center;
-   align-content: center;
-  }
-  /* MenuPage Grid Responsive for Tablet screens */
-  @media(max-width: 1144px){
-    .categoryOne{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-  .pizza{
-     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-  .Noodles{
-     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-   .starters{
-     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-  }
-}
-  /* MenuPage Grid Responsive for Phone screens */
-  @media(max-width: 600px){
-    .categoryOne{
-   display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr;
-    
-  }
-  .pizza{
-     display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr;
-  }
-  .Noodles{
-     display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr;
-  }
-   .starters{
-     display: grid;
-    grid-column-gap:20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr;
-  }
-  }
-  /* Styling for Contact-Us Page */
 
-  
-  #contactBox{
-    width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 85%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    border-radius: 20px;
-    padding: 55px 30px;
-    background-color: #795f0b;
-    margin: 50px auto;
-    opacity: 0.7;
-  }
-  /* .areas{
+.homePageStyle background-image {
+ opacity: 0.5;
+}
+#bigText {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 0 23px;
+}
+#bigText h1 {
+ color: #81e678;
+ font-size: 60px;
+ line-height: 1.2;
+ text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black;
+}
+#bigText p {
+ font-size: 30px;
+ color: #81e678;
+ text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black;
+}
+#bigText .button {
+ font-size: 20px;
+ text-decoration: none;
+ color: #81e678;
+ border: rgb(112, 253, 112) 2px solid;
+ padding: 12px 22px;
+ border-radius: 11px;
+ margin-top: 20px;
+ text-shadow: 0.04em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.04em black;
+}
+#bigText .button:hover {
+ background-color: #795f0b;
+ color: aliceblue;
+}
+/* Styling for Menu page which will contain all products */
+
+.menuPageDesign {
+ background-image: url(images/contactPageBackground.jpg);
+}
+
+section {
+ padding: 3.5em;
+}
+section .card {
+ background-color: white;
+ border-radius: 12px;
+ box-shadow: 0px 10px 5px #636e72;
+ padding: 1em;
+ text-align: center;
+}
+.card .title {
+ font-size: 22px;
+ font-weight: bold;
+ color: #04612f;
+}
+/* Few issues with image styling, when changing width/height to auto its breaking responsiveness but without it the images are not scaled right. */
+.card .image img {
+ border-radius: 4px;
+ max-height: 500px;
+ max-width: 500px;
+ width: 100%;
+ height: 100%;
+}
+.card .text {
+ color: #04612f;
+ text-align: left;
+ margin-left: 2em;
+ font-size: 15px;
+ margin-bottom: 0.5em;
+}
+.card .price {
+ color: #04612f;
+ font-size: 20px;
+}
+.card .cart-button {
+ border: none;
+ /* padding: 1em; */
+ border-radius: 5px;
+ color: green !important;
+ border-radius: 5px;
+ padding: 10px;
+ border: 1px dashed rgb(0, 255, 149);
+ font-weight: bold;
+ width: 80%;
+}
+.card .cart-button:hover {
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(3, 53, 12);
+ border-radius: 50px;
+}
+
+/* Styling each section differently as grids to allow for headers above them/ For Desktop Screens*/
+.categoryOne {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
+}
+.pizza {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
+}
+.Noodles {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
+}
+.starters {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
+}
+.categoryHeader {
+ background-color: #04612f;
+ border-radius: 12px;
+ box-shadow: 0px 10px 5px #636e72;
+ padding: 0.5em;
+ text-align: center;
+ color: white;
+ width: 100%;
+ align-items: center;
+ align-content: center;
+}
+/* MenuPage Grid Responsive for Tablet screens */
+@media (max-width: 1144px) {
+ .categoryOne {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+ }
+ .pizza {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+ }
+ .Noodles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+ }
+ .starters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+ }
+}
+/* MenuPage Grid Responsive for Phone screens */
+@media (max-width: 600px) {
+ .categoryOne {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+ }
+ .pizza {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+ }
+ .Noodles {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+ }
+ .starters {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr;
+ }
+}
+
+/* Styling for Contact-Us Page */
+
+#contactBox {
+ width: 700px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ max-width: 85%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ border-radius: 20px;
+ padding: 55px 30px;
+ background-color: #795f0b;
+ margin: 50px auto;
+ opacity: 0.7;
+}
+/* .areas{
     width: 100%;
     padding: 20px 40px;
     margin: 20px 0;
   } */
-  .targetLabels{
-    color: white;
-    font-style: oblique;
-    font-weight: 100;
-    font: bold;
-    font-size: 25px;
-  }
+.targetLabels {
+ color: white;
+ font-style: oblique;
+ font-weight: 100;
+ font: bold;
+ font-size: 25px;
+}
 
-  .targetInputs{
-    width: 100%;
-    padding: 20px 40px;
-    margin: 20px 0;
-    outline: none;
-    
-  }
-  #contactBox h3{
-    margin-bottom:30px;
-    padding-bottom:9px;
-    color: white;
-    font-size: 50px;
-    font-style: oblique;
-    font-weight: 100;
-    font: bold;
-  }
- 
-  
-  .contactPage{
-    background-image: url(images/contactPageBackground.jpg);
-  }
-  /* Button styling same as menu page to keep consistency */
-  .SendMessage{
-   border: none;
-   /* padding: 1em; */
-   border-radius: 5px;
-  color: #795f0b !important;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px dashed rgb(0, 255, 149);
-  font-weight: bold;
-  font-size: 18px;
-  width: 80%;
+.targetInputs {
+ width: 100%;
+ padding: 20px 40px;
+ margin: 20px 0;
+ outline: none;
+}
+#contactBox h3 {
+ margin-bottom: 30px;
+ padding-bottom: 9px;
+ color: white;
+ font-size: 50px;
+ font-style: oblique;
+ font-weight: 100;
+ font: bold;
+}
+
+.contactPage {
+ background-image: url(images/contactPageBackground.jpg);
+}
+/* Button styling same as menu page to keep consistency */
+.SendMessage {
+ border: none;
+ /* padding: 1em; */
+ border-radius: 5px;
+ color: white !important;
+ border-radius: 5px;
+ padding: 10px;
+ border: 1px dashed rgb(0, 255, 149);
+ font-weight: bold;
+ font-size: 18px;
+ width: 80%;
+}
+.SendMessage:hover {
+ transform: scale(1.1);
+ transition: 0.3s;
+ background-color: rgb(3, 53, 12);
+ border-radius: 50px;
+}
+/* About page styling */
+.allQuestions {
+ min-height: 80vh;
+ width: 80%;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.aboutBackground h1 {
+ display: flex;
+ justify-content: center;
+ color: #04612f;
+}
+.topquestions {
+ max-width: 700px;
+ margin-top: 2rem;
+ padding-bottom: 1rem;
+ border-bottom: 2px solid #fff;
+ cursor: pointer;
+ background: #795f0b;
+}
+.topquestions.active .answer {
+ overflow: none;
+ max-height: 300px;
+ animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+ from {
+  opacity: 0;
+  transform: translateY(-10px);
  }
- .SendMessage:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-  background-color: rgb(3, 53, 12);
-  border-radius: 50px;
-  }
-
+ to {
+  opacity: 1;
+  transform: translateY(-10px);
+ }
+}
+.openquestions {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.openquestions h3 {
+ font-size: 1.8rem;
+ color: #04612f;
+}
+.answer p {
+ padding-top: 1rem;
+ line-height: 1.6;
+ font-size: 1.4rem;
+ color: #04612f;
+}
+.answer {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.1s ease;
+}
+.aboutBackground {
+ background: #795f0b;
+}

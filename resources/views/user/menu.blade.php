@@ -15,7 +15,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body class = "menuPageDesign">
     @if(session()->has('message'))
         <!-- Use of bootstrap class for alert message -->
         <div class ="alert alert-success" style = "width:50%">
@@ -29,7 +29,7 @@
        @include('user.navbar')
     </header>
     
-    <div class="categoryHeader">Burgers</div>
+    <div class="categoryHeader">Menu</div>
     <section class="categoryOne">
         
        @foreach($value -> chunk(3)  as $chunk) 

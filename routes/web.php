@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 /*
@@ -28,9 +29,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
-// Setting routes to Home controller adn Admin controller and to different pages of the website with url setting. All the routes for the website are setup on this page and allow data from different locations to be connected back through url.
+// Setting routes to Home controller and Admin controller and then to different pages of the website with url setting's. All the routes for the website are setup on this page and allow data from different locations to be connected back through url to controller to web.php.
 
-// Some route have been setup as post to enter data rather then get data. It is for the entry of products into the database through the menuProducts blade page, similaryly for messages. The code for this route is setup in the admin controller where it is linked to or the User controller.
+// Some route have been setup as post to enter data rather then get data. e.g It is for the entry of products into the database through the menuProducts blade page, similarly for messages. The code for this route is setup in the admin controller where it is linked to or the User controller.
 
 Route::get('/redirect',[UserController::class,'redirect']);
 
@@ -61,3 +62,11 @@ Route::post('/changeMenuProducts/{id}',[AdminController::class,'changeMenuProduc
 
 //addToCart route
 Route::post('/addToCart/{id}',[UserController::class,'addToCart']);
+
+// Route for navbar -> basket number however undefined variable thrown, Checkout is unfinished and was throwing errors unfortunately
+Route::get('/navbar',[UserController::class,'navbar']);
+
+Route::get('/checkout',[UserController::class,'checkout']);
+
+Route::get('/checkout',[UserController::class,'checkout']);
+

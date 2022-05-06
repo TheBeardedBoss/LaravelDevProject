@@ -23,6 +23,7 @@ class User extends Authenticatable
      *
      * @var string[]
      */
+    // Values were added here for the project, to accommodate the extra columns in the database
     protected $fillable = [
         'name',
         'email',

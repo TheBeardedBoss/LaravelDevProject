@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+// Table created after making model and migration in cmd. Thereafter nullabe fields have been added for the extra fields mainly message in Contact form and table.
 
 return new class extends Migration
 {

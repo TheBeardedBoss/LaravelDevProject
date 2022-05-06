@@ -62,29 +62,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Laravel Jetstream is open-sourced software licensed under the MIT license. https://github.com/laravel/jetstream
+BootStrap  Code released under the MIT License https://github.com/twbs/bootstrap
 
 
 References used to create this website - 
 
-https://www.youtube.com/watch?v=PwWHL3RyQgk - Used,implemented and adapted to design my navbar in the way I wanted
-
-https://www.youtube.com/watch?v=hVdTQWASliE - Used and implemented to create landing page of my website
-
-https://www.youtube.com/watch?v=QRHjKAq4x3I - Used,implemented and adapted in creating Grid foundation for my menu page
-
+https://www.youtube.com/watch?v=PwWHL3RyQgk 
+https://www.youtube.com/watch?v=hVdTQWASliE 
+https://www.youtube.com/watch?v=QRHjKAq4x3I 
 Jetsream/livewire (Open-Source, Free to use) package used in conjunction with laravel to create this project and build authentication sevices.
-
-https://www.youtube.com/watch?v=mU6anWqZJcc - HTML and CSS course 
-
-https://www.youtube.com/watch?v=MFh0Fd7BsjE - Laravel Crash course
-
-https://www.youtube.com/watch?v=ImtZ5yENzgE Laravel Course
-
-DMU FRONT END WEB DEVELOPMENT MODULE - Implemented mobile menu which I learnt from a previous module.
-
-https://www.youtube.com/watch?v=f0DcnrpeBv8 - Contact
-https://www.youtube.com/watch?v=opbtRRSHGnk - contact
-https://www.youtube.com/watch?v=p_QjYcQV1Bc - contact
+https://www.youtube.com/watch?v=mU6anWqZJcc 
+https://www.youtube.com/watch?v=MFh0Fd7BsjE 
+https://www.youtube.com/watch?v=ImtZ5yENzgE 
+DMU FRONT END WEB DEVELOPMENT MODULE
+https://www.youtube.com/watch?v=f0DcnrpeBv8 
+https://www.youtube.com/watch?v=opbtRRSHGnk 
+https://www.youtube.com/watch?v=p_QjYcQV1Bc 
 https://www.youtube.com/watch?v=9hnJsNIBq1g
-https://www.veerotech.net/kb/how-to-drop-a-table-in-phpmyadmin/#:~:text=Login%20to%20cPanel%20and%20open,Drop%20to%20delete%20the%20table. - phpMyadmin
+https://www.veerotech.net/kb/how-to-drop-a-table-in-phpmyadmin/#:~:text=Login%20to%20cPanel%20and%20open,Drop%20to%20delete%20the%20table. 
 https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color
+https://www.youtube.com/watch?v=9hnJsNIBq1g
+https://www.youtube.com/watch?v=dPLHi7tsoFU
+https://codepen.io/fazlurr/pen/qbWMRv
+https://www.youtube.com/watch?v=MYyJ4PuL4pY
+https://www.youtube.com/watch?v=qz0aGYrrlhU

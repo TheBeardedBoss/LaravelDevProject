@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
-  <body>
+  <body class="homePageStyle">
     <!-- Creating the desktop Nav -->
     <header>
-         @include('user.navbar')
-      <!-- Creating the mobile nav! after the desktop nav -->
+      @include('user.navbar')
+      <!-- Creating the mobile nav! after the desktop nav / I believe this is old code -->
       <div id="mobileNav">
         <div class="bar"></div>
         <div class="bar2"></div>
@@ -24,17 +24,17 @@
           <li><a href="/">About</a></li>
           <li id="login"><a href="/">Login</a></li>
           <li id="signup"><a href="/">Sign-up</a></li>
-          </ul>
+        </ul>
       </div>
     </header>
 
     <!-- Main Area Code! -->
     <main id="bigText">
-      <h1>Welcome to my site!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nobis neque blanditiis sint labore quidem reiciendis, perspiciatis earum illo corrupti minima, corporis culpa unde ad rerum est magni itaque consequatur.</p>
-      <a href="#" class="button">Start Exploring!</a>
-      </main>
-      <script>
+      <h1>My Food Store!</h1>
+      <p>Here you can find the tastiest foods!.</p>
+      <a href="/menu" class="button">Start Exploring!</a>
+    </main>
+    <script>
       src = "scripts.js";
     </script>
   </body>
