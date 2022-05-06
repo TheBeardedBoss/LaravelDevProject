@@ -85,8 +85,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
 https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color
 https://www.youtube.com/watch?v=9hnJsNIBq1g
 https://www.youtube.com/watch?v=dPLHi7tsoFU
+https://www.youtube.com/watch?v=6u6XbhDrFLc
 https://codepen.io/fazlurr/pen/qbWMRv
+https://www.youtube.com/watch?v=xfSks-NdHPw&list=PLz_YkiqIHesvPtvLl2Wz5FtuW44dBt199
 https://www.youtube.com/watch?v=MYyJ4PuL4pY
+https://www.youtube.com/watch?v=XKws9BqwtS0&list=PLm8sgxwSZoffylo3MU2K24wEUHvdJlNbX
 https://www.youtube.com/watch?v=qz0aGYrrlhU
+https://www.youtube.com/watch?v=kEa1SfqzMJo&list=PLWCLxMult9xdD3zH8lDbGwlyaCzOR_74F
 
 At registration Database usertype can be changed to 1 for Admin login.
