@@ -88,3 +88,5 @@ https://www.youtube.com/watch?v=dPLHi7tsoFU
 https://codepen.io/fazlurr/pen/qbWMRv
 https://www.youtube.com/watch?v=MYyJ4PuL4pY
 https://www.youtube.com/watch?v=qz0aGYrrlhU
+
+At registration Database usertype can be changed to 1 for Admin login.
