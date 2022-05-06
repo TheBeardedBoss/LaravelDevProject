@@ -93,4 +93,4 @@ https://www.youtube.com/watch?v=XKws9BqwtS0&list=PLm8sgxwSZoffylo3MU2K24wEUHvdJl
 https://www.youtube.com/watch?v=qz0aGYrrlhU
 https://www.youtube.com/watch?v=kEa1SfqzMJo&list=PLWCLxMult9xdD3zH8lDbGwlyaCzOR_74F
 
-At registration Database usertype can be changed to 1 for Admin login.
+At registration Database usertype can be changed in phyMyAdmin to 1 for Admin login.
